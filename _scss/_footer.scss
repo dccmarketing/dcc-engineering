@@ -1,0 +1,26 @@
+[role="contentinfo"] {
+	background-color: $ltgray;
+
+	.wrap {
+		@include limitandcenter();
+		align-items: center;
+		display: flex;
+		justify-content: space-around;
+	}
+
+	ul {
+		@include listreset();
+	}
+
+	.logo {
+		fill: $aqua;
+		height: 96px;
+		width: 150px;
+	}
+
+	section {
+		@media screen and (max-width: $bp__menubutton - 1) {
+			text-align: center;
+		}
+	}
+}

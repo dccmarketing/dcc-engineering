@@ -1,0 +1,44 @@
+{
+  "name": "dcc-engineering",
+  "author": "dccmarketing",
+  "version": "1.0.0",
+  "license": "GPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dccmarketing/dcc-engineering.git"
+  },
+  "dependencies": {
+    "lodash": "^4.13.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-filter": "*",
+    "gulp-gh-pages": "*",
+    "gulp-htmlmin": "*",
+    "gulp-imagemin": "*",
+    "gulp-line-ending-corrector": "*",
+    "gulp-load-plugins": "*",
+    "gulp-merge-media-queries": "*",
+    "gulp-notify": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sort": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "^3.0.7",
+    "path": "*"
+  },
+  "bugs": {
+    "url": "https://github.com/dccmarketing/dcc-engineering/issues"
+  },
+  "homepage": "https://github.com/dccmarketing/dcc-engineering#readme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "description": ""
+}

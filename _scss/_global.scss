@@ -1,0 +1,77 @@
+html {
+	line-height: 1.5;
+}
+
+body,
+button,
+[role="button"]
+input,
+select,
+textarea {
+	font-family: 'Open Sans', sans-serif;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: 'Source Code Pro', monospace;
+}
+
+::selection {
+	background-color: $aqua;
+	color: $light;
+}
+
+a {
+	color: $purple;
+
+	&:hover,
+	&:focus,
+	&:active {
+		color: $aqua;
+	}
+}
+
+h2 {
+	border-bottom: 1px solid;
+	margin-top: 2em;
+	padding-bottom: 0.25em;
+}
+
+/* Text meant only for screen readers */
+.screen-reader-text {
+	clip 		: rect(1px, 1px, 1px, 1px);
+	height 		: 1px;
+	line-height : 0;
+	min-height 	: 0;
+	overflow 	: hidden;
+	//position 	: absolute !important;
+	transition 	: min-height 0.4s ease;
+	width 		: 1px;
+
+	&:focus {
+		box-shadow 			: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+		clip 				: auto !important;
+		color 				: $light;
+		font-size 			: 0.875em;
+		font-weight 		: bold;
+		left 				: 5px;
+		line-height 		: 1;
+		min-height 			: 20px;
+		padding 			: 15px 23px 14px;
+		text-decoration 	: none;
+		top 				: 5px;
+		width 				: 100%;
+		z-index 			: 100000; /* Above WP toolbar */
+	}
+}
+
+/* Do not show the outline on the skip link target. */
+#content[tabindex="-1"]:focus {
+	outline: 0;
+}
+
+[role="main"] {
+	@include limitandcenter();
+}

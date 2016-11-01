@@ -1,0 +1,22 @@
+---
+layout: default
+page: php
+title: PHP
+nav: PHP
+group: navigation
+weight: 4
+subnav:
+- title: Patterns and Performance
+  tag: patterns
+- title: Security
+  tag: security
+- title: Internationalization
+  tag: i18n
+- title: Style and Documentation
+  tag: docs
+---
+
+<section class="content">
+ 	{% capture php %}{% include markdown/php.md %}{% endcapture %}
+	{{ php | markdownify }}
+</section>

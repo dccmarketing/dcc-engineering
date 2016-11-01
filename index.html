@@ -1,0 +1,10 @@
+---
+layout: default
+title: Best Practices
+weight: 1
+---
+
+<section class="content">
+	{% capture index %}{% include markdown/index.md %}{% endcapture %}
+	{{ index | markdownify }}
+</section>

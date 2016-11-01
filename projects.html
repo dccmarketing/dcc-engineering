@@ -1,0 +1,24 @@
+---
+layout: default
+title: Projects
+page: projects
+nav: Projects
+group: navigation
+weight: 7
+subnav:
+- title: Developing Themes
+  tag: dev-themes
+- title: Developing Plugins
+  tag: dev-plugins
+- title: Site Setup
+  tag: site
+- title: Using Plugins
+  tag: plugins
+- title: WordPress Best Practices
+  tag: wp
+---
+
+<section class="content">
+	{% capture projects %}{% include markdown/projects.md %}{% endcapture %}
+	{{ projects | markdownify }}
+</section>

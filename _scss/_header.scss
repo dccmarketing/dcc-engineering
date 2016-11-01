@@ -1,0 +1,45 @@
+.link-logo {
+	display: block;
+
+	@media screen and (min-width: $bp__menubutton) {
+		text-align: center;
+	}
+}
+
+.link-top {
+	float: right;
+	font-size: 0.9rem;
+	text-decoration: none;
+}
+
+[role="banner"] {
+	background-color: $purple;
+	overflow: auto;
+	padding: 3%;
+
+	@media screen and (min-width: $bp__menubutton) {
+		align-items: center;
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 0;
+		padding-top: 0;
+	}
+
+	.logo {
+		fill: $light;
+		height: 130px;
+		width: 150px;
+	}
+}
+
+.title {
+	color: $light;
+	margin: 0;
+	text-align: center;
+}
+
+.skip-link {
+	background-color: $gray;
+	display: block;
+	margin-top: -1px;
+}

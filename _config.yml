@@ -1,0 +1,27 @@
+name:          DCC Marketing Development Standards
+title:         DCC Marketing Development Standards
+description:   Development standards used at DCC Marketing.
+url:           https://dccmarketing.github.io/dcc-engineering
+author:
+  name:    DCC Marketing
+  email:   web@dccmarketing.com
+  github:  dccmarketing
+  twitter: dccmarketing
+
+markdown:      kramdown
+permalink:     pretty
+highlighter:   rouge
+encoding:      utf-8
+kramdown:
+  input: GFM
+  parse_block_html: true
+sass:
+  sass_dir: _scss
+CONFIG:
+  BASE_PATH: https://dccmarketing.github.io/dcc-engineering
+  ASSET_PATH: false
+
+exclude:
+  - package.json
+  - node_modules
+  - gulpfile.js

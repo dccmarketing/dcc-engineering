@@ -1,0 +1,11 @@
+@mixin limitandcenter() {
+	margin: 0 auto;
+	max-width: $max-width;
+	padding: 3%;
+}
+
+@mixin listreset() {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

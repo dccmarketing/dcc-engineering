@@ -1,0 +1,16 @@
+{% if page.subnav %}
+<section>
+	<h2>Table of Contents</h2>
+	<nav class="nav-page" role="navigation">
+		{% assign subnav_list = page.subnav %}
+		<ul class="page-menu">
+		  {% for subnav in subnav_list %}
+			  <li class="pagemenu-item">
+				  <a class="pagemenu-link" href="#{{ subnav.tag }}">{{ subnav.title }}</a>
+			  </li>
+		  {% endfor %}
+		</ul>
+		{% assign subnav_list = nil %}
+	</nav>
+</section>
+{% endif %}

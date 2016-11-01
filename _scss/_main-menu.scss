@@ -1,0 +1,101 @@
+.nav-main {
+
+	a {
+		text-decoration: none;
+	}
+
+	.menu {
+		display: none;
+		@include listreset();
+
+		&[aria-expanded="true"] {
+			background-color: $light;
+			box-shadow: 0 3px 3px rgba( $purple, 0.2);
+			display: block;
+			left: 50%;
+			position: absolute;
+			transform: translateX(-50%);
+			width: 70%;
+		}
+
+		@media screen and (min-width: $bp__menubutton) {
+			display: flex;
+			justify-content: space-around;
+			margin: 0 auto;
+			max-width: $max-width;
+		}
+
+
+	}
+
+	.menu-item {
+		position: relative;
+
+		&:hover {
+			> .submenu {
+				opacity: 1;
+				visibility: inherit;
+			}
+		}
+
+		&.current {
+			background-color: $gray;
+
+			> a {
+				color: $light;
+			}
+		}
+	}
+
+	.submenu-item {
+		white-space: nowrap;
+	}
+
+	.submenu {
+		display: none;
+
+		@media screen and (min-width: $bp__menubutton) {
+			@include listreset();
+			background-color: $light;
+			box-shadow: 0 3px 3px rgba( $purple, 0.2);
+			display: inherit;
+			opacity: 0;
+			position: absolute;
+			top: 100%;
+			transition: 0.4s ease;
+			visibility: hidden;
+			z-index: 9999;
+		}
+	}
+
+	.menu-link,
+	.submenu-link {
+		display: block;
+		padding: 1em;
+	}
+
+	.menu-link {
+		text-align: center;
+
+		@media screen and (max-width: $bp__menubutton - 1) {
+			font-size: 1.125em;
+			padding: 0.75em;
+		}
+	}
+}
+
+.btn-menu {
+	background-color: transparent;
+	border: none;
+	color: $light;
+	font-size: 1.5em;
+	outline-color: $orange;
+	padding: 1em 2em;
+	position: absolute;
+	right: 1rem;
+	top: 1rem;
+
+	@media screen and (min-width: $bp__menubutton) {
+		display: none;
+	}
+}

@@ -1,0 +1,20 @@
+---
+layout: default
+title: Markup
+page: markup
+nav: Markup
+group: navigation
+weight: 2
+subnav:
+- title: HTML
+  tag: html
+- title: Accessibility
+  tag: a11y
+- title: Images, Icons, and Fonts
+  tag: images
+---
+
+<section class="content">
+	{% capture markup %}{% include markdown/markup.md %}{% endcapture %}
+	{{ markup | markdownify }}
+</section>
