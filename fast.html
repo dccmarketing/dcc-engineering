@@ -1,0 +1,26 @@
+---
+layout: default
+page: fast
+title: Fast and Scalable
+nav: Fast and Scalable
+group: navigation
+weight: 3
+subnav:
+- title: CSS and SCSS Practices
+  tag: css
+- title: Javascript Practices
+  tag: js
+- title: PHP Practices
+  tag: php
+- title: Webfonts
+  tag: webfonts
+- title: Image Practices
+  tag: images
+- title: SVGs
+  tag: svgs
+---
+
+<section class="content">
+	{% capture fast %}{% include markdown/fast.md %}{% endcapture %}
+	{{ fast | markdownify }}
+</section>

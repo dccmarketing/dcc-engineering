@@ -1,0 +1,24 @@
+---
+layout: default
+page: reusable
+title: Reusable
+nav: Reusable
+group: navigation
+weight: 3
+subnav:
+- title: CSS and SCSS Practices
+  tag: css
+- title: Javascript Practices
+  tag: js
+- title: PHP Practices
+  tag: php
+- title: Documentation
+  tag: docs
+- title: git and Github
+  tag: git
+---
+
+<section class="content">
+	{% capture reusable %}{% include markdown/reusable.md %}{% endcapture %}
+	{{ reusable | markdownify }}
+</section>

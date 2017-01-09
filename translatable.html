@@ -1,0 +1,16 @@
+---
+layout: default
+page: translatable
+title: Translatable
+nav: Translatable
+group: navigation
+weight: 3
+subnav:
+- title: SASS
+  tag: sass
+---
+
+<section class="content">
+	{% capture translatable %}{% include markdown/translatable.md %}{% endcapture %}
+	{{ translatable | markdownify }}
+</section>

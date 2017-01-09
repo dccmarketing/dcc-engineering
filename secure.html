@@ -1,0 +1,20 @@
+---
+layout: default
+page: secure
+title: Secure
+nav: Secure
+group: navigation
+weight: 3
+subnav:
+- title: Validate and Sanitize Inputs
+  tag: validate
+- title: Escape Outputs
+  tag: escape
+- title: Use Nonces
+  tag: nonces
+---
+
+<section class="content">
+	{% capture secure %}{% include markdown/secure.md %}{% endcapture %}
+	{{ secure | markdownify }}
+</section>
