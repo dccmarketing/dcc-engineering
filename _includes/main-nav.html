@@ -5,26 +5,26 @@
 		{% assign group = 'navigation' %}
 		{% for node in pages_list %}
 		  {% if null != node.title %}
-		    {% if null == group or node.group == group %}
-		      {% if page.url == node.url %}
-		      	<li class="menu-item current">
-		      {% else %}
-		      	<li class="menu-item">
-		      {% endif %}
-		      	<a class="menu-link" href="{{ node.url }}">{{ node.nav }}</a>
-		      	{% if node.subnav %}
-		      	{% assign subnav_list = node.subnav %}
-		      	<ul class="submenu">
-		      	  {% for subnav in subnav_list %}
-				      <li class="submenu-item">
-						  <a class="submenu-link" href="{{ node.url }}#{{ subnav.tag }}">{{ subnav.title }}</a>
+			{% if null == group or node.group == group %}
+			  {% if page.url == node.url %}
+				  <li class="menu-item current">
+			  {% else %}
+				  <li class="menu-item">
+			  {% endif %}
+				  <a class="menu-link" href="{{ site.url }}{{ node.url }}">{{ node.nav }}</a>
+				  {% if node.subnav %}
+				  {% assign subnav_list = node.subnav %}
+				  <ul class="submenu">
+					{% for subnav in subnav_list %}
+					  <li class="submenu-item">
+						  <a class="submenu-link" href="{{ site.url }}{{ node.url }}#{{ subnav.tag }}">{{ subnav.title }}</a>
 					  </li>
-		          {% endfor %}
-		      	</ul>
-		      	{% assign subnav_list = nil %}
-		      	{% endif %}
-		      </li>
-		    {% endif %}
+				  {% endfor %}
+				  </ul>
+				  {% assign subnav_list = nil %}
+				  {% endif %}
+			  </li>
+			{% endif %}
 		  {% endif %}
 		{% endfor %}
 		{% assign pages_list = nil %}
