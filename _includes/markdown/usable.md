@@ -17,7 +17,7 @@ These are opinionated, general coding practices that should be followed to maint
 
 
 
-## CSS {% assign anchor="css" %}{% include toplink.html %}
+## CSS and SASS {% assign anchor="css" %}{% include toplink.html %}
 
 * Default font size is 16px. Go larger rather than smaller for readability and increased effectiveness. [Your Body Text Is Too Small](https://blog.attackthefront.io/your-body-text-is-too-small-5e02d36dc902)
 * Text sizes should be expressed in EMs or REMs, not pixels or points; except for the base font size. EMs and REMs allow the end user to resize the text easily proportionately.
@@ -45,7 +45,7 @@ As far as IE/Edge support, we only support the current version of Edge, IE 10, a
 
 
 
-## WordPress Functionality
+## WordPress Functionality {% assign anchor="wp" %}{% include toplink.html %}
 
 If WordPress already does something, use it. Don't re-invent the wheel. 
 
