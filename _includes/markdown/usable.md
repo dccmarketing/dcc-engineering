@@ -67,7 +67,7 @@ We have our own starter theme/framework called Rosh, which is based on `_s`, and
 
 We typically do not use theme frameworks, although if one must be used, we prefer [Genesis by Studiopress](http://www.studiopress.com/features/).
 
-We do not typically use page builders either. If one must be used, please use [Tailor](http://gettailor.com/).
+We don't typically use page builders, but we do have a licensed copy of Divi by Elegant Themes and have used it for small, low-budget projects.
 
 
 
@@ -88,7 +88,6 @@ We have licenses available for several common plugins:
 * Formidable Pro - contact forms
 * Advanced Custom Fields - metaboxes and fields
 * Soliloquy - sliders
-* Duplicator Pro - site mgiration and backups
 * Video User Manuals - user training
 * WP Google Analytics Events Pro - Google analytics event tracking
 
